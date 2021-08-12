@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route,Link } from "react-router-dom";
 import Login from './components/Login';
 import Perfil from './components/Perfil';
+import Dashboard from './components/Dashboard';
 import React, { Component } from "react";
 
 function App(){
@@ -15,6 +16,9 @@ function App(){
                    <li>
                    <Link to="/perfil">perfil</Link>
                    </li>
+                   <li>
+                   <Link to="/dashboard">Dashboard</Link>
+                   </li>
                </ul>
                <hr/>
            
@@ -24,6 +28,9 @@ function App(){
                 </Route>
                 <Route path="/Perfil">
                     <Perfil/>
+                </Route>
+                <Route path="/Dashboard">
+                    <Dashboard/>
                 </Route>  
             </Switch>
         </div>

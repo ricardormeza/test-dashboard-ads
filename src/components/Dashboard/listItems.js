@@ -17,8 +17,32 @@ import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import GroupAddIcon from '@material-ui/icons/GroupAdd';
 
-import { Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+const routes = [
+  {
+    path: "/",
+    exact: true,
+    sidebar: () => <div>home!</div>,
+    main: () => <h2>Home</h2>
+  },
+  {
+    path: "/bubblegum",
+    sidebar: () => <div>bubblegum!</div>,
+    main: () => <h2>Bubblegum</h2>
+  },
+  {
+    path: "/shoelaces",
+    sidebar: () => <div>shoelaces!</div>,
+    main: () => <h2>Shoelaces</h2>
+  }
+];
 
+/** fin sidebar */
 
 export const mainListItems = (
   <div>
@@ -26,8 +50,7 @@ export const mainListItems = (
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
-        <Link to="/Album">Album</Link>
-        <ListItemText primary="Dashboard" />
+        <ListItemText primary="Dashboard"/>
     </ListItem>
     <ListItem button>
       <ListItemIcon>

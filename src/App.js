@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route,Link } from "react-router-dom";
 import Login from './components/Login';
 import Perfil from './components/Perfil';
-import Dashboard from './components/Dashboard';
+import Dashboard from './components/Dashboard/Dashboard';
 import React, { Component } from "react";
 
 function App(){

@@ -1,3 +1,6 @@
+# Proyecto test de un Dashboard 
+Se trabaja con react y material ui y se implementara firebase
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
